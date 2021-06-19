@@ -1,0 +1,33 @@
+$bgColor: (
+  'sec-color': #f7f7f7,
+);
+
+@function get-bgColor($key) {
+  @return map-get($bgColor, $key);
+}
+
+$titleColor: (
+  'main-white-color': #ffffff,
+);
+
+@function get-titleColor($key) {
+  @return map-get($titleColor, $key);
+}
+
+$textColor: (
+  'main-text-color': #000000,
+  'footer-text-color': #545454,
+);
+
+@function get-textColor($key) {
+  @return map-get($textColor, $key);
+}
+
+$elementColor: (
+  'accent-color': #ff6b08,
+  'error-color': #ff001b,
+);
+
+@function get-elementColor($key) {
+  @return map-get($elementColor, $key);
+}
